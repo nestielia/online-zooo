@@ -14,6 +14,12 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 1220px) {
+  .container {
+      max-width: calc(100% - 60px);
+  }
+}
+
 .btn-default {
   width: 298px;
   height: 54px;
@@ -154,7 +160,8 @@ h1 {
 
 @media (max-width: 1220px) {
     .banner {
-        height: 584px;
+        height: 390px;
+        background: url(../../assets/images/panda_bg.png);
     }
 }
 
@@ -186,26 +193,47 @@ h1 {
 }
 
 .donate-container {
+  width: 100%;
+  height: 100%;
   padding-top: 40px;
-  height: 1482px;
+  padding-bottom: 180px;
   color: #ffffff;
 }
 
-.donate-container h3 {
-  padding-top: 1px;
+@media (max-width: 1220px) {
+  .donate-container {
+    padding-bottom: 30px;
+  }
 }
 
-.donate-container p {
-  font-weight: 500;
+.donate-container .title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1220px) {
+  .donate-container .title {
+    margin-right: 92px;
+    margin-bottom: 30px;
+  }
+}
+
+.subtitle1 {
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  padding-top: 10px;
+  padding-bottom: 4px;
+  margin-bottom: 40px;
 }
 
 .donate-container .info {
   color: #fe9013;
-  padding-top: 45px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 1220px) {
+  .donate-container .info {
+    margin-bottom: 40px;
+  }
 }
 
 .donate-block {
@@ -216,6 +244,12 @@ h1 {
 
 .inner-donate-block {
   padding: 40px 92px 62px;
+}
+
+@media (max-width: 1220px) {
+  .inner-donate-block {
+    padding: 20px 47px 46px;
+  }
 }
 
 .inner-donate-block h2 {
@@ -231,6 +265,12 @@ h1 {
   color: #333b41;
   text-align: left;
   padding-top: 21px;
+}
+
+@media (max-width: 1220px) {
+  .inner-donate-block .subtitle {
+    padding-top: 12px;
+  }
 }
 
 .panda-block {
@@ -301,8 +341,20 @@ h1 {
   left: 4px;
 }
 
+@media (max-width: 1220px) {
+  .inner-donate-block .progress-bar::before {
+    left: 0;
+  }
+}
+
 .progress-bar {
-  width: 976px;
+  width: 100%;
+}
+
+@media (max-width: 1220px) {
+  .progress-bar {
+    padding: 0 18px;
+  }
 }
 
 .progress-bar-block {
@@ -318,6 +370,13 @@ h1 {
   padding-right: 15px;
 }
 
+@media (max-width: 1220px) {
+  .progress-bar-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .progress-bar-line {
   height: 2px;
   background: #72828E;
@@ -326,10 +385,22 @@ h1 {
   margin: auto 20px;
 }
 
+@media (max-width: 1220px) {
+  .progress-bar-line {
+    width: calc(100% - 40px);
+  }
+}
+
 .progress-bar-selector {
   width: 40px;
   height: 40px;
   position: relative;
+}
+
+@media (max-width: 1220px) {
+  .progress-bar-selector:nth-child(2) {
+    display: none;
+  }
 }
 
 .progress-bar-selector:hover input::after {
@@ -356,6 +427,13 @@ h1 {
   left: 6px;
 }
 
+@media (max-width: 1220px) {
+  .progress-bar-radio::before {
+    top: 6px;
+    left: 6px;
+  }
+}
+
 .progress-bar-radio::after {
   content: "";
   height: 10px;
@@ -366,6 +444,13 @@ h1 {
   margin: auto;
   top: 15px;
   left: 15px;
+}
+
+@media (max-width: 1220px) {
+  .progress-bar-radio::after {
+    top: 14px;
+    left: 14px;
+  }
 }
 
 .progress-bar-radio:checked,
@@ -386,6 +471,13 @@ h1 {
   cursor: pointer;
   left: -14px;
   top: 3px;
+}
+
+@media (max-width: 1220px) {
+  .progress-bar-label {
+    left: -6px;
+    top: 0;
+  }
 }
 
 .bottom-content {
@@ -459,13 +551,28 @@ h1 {
   padding-left: 5px;
 }
 
+@media (max-width: 1220px) {
+  .bottom-content .btn-default {
+    margin-top: 20px;
+    padding-left: 2px;
+    margin-bottom: 20px;
+  }
+}
+
 .bottom-content .share-txt {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #333B41;
-  margin-top: 10px;
-  margin-left: 6px;
+  margin-top: 20px;
+  margin-left: 4px;
+}
+
+@media (max-width: 1220px) {
+  .bottom-content .share-txt {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 /* footer */
@@ -477,12 +584,6 @@ h1 {
 .inner-footer {
   padding-top: 40px;
   padding-bottom: 50px;
-}
-
-@media (max-width: 1220px) {
-  .inner-footer {
-      padding-top: 41px;
-  }
 }
 
 .footer-top {
@@ -503,8 +604,6 @@ h1 {
   border: 1.18841px solid #fff;
   text-decoration: none;
   margin-bottom: 68px;
-  margin-top: 2px;
-  padding-top: 2px;
 }
 
 .footer-logo-text {
@@ -532,7 +631,7 @@ h1 {
 
 @media (max-width: 1220px) {
   .donate-btn {
-      margin-bottom: 46px;
+      margin-bottom: 44px;
   }
 }
 
@@ -541,8 +640,7 @@ h1 {
   font-size: 24px;
   line-height: 120%;
   color: #fff;
-  margin-top: 3px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .form .email {
@@ -629,7 +727,7 @@ h1 {
 
 @media (max-width: 1220px) {
   .footer-menu {
-      margin-left: 45px;
+      margin-left: 70px;
   }
 }
 
@@ -657,7 +755,7 @@ h1 {
 }
 
 .author {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 1220px) {
