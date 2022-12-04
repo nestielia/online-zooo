@@ -53,6 +53,14 @@ h3 {
     cursor: pointer;
 }
 
+.btn-default:hover {
+    background: #e47209;
+}
+
+.btn-default:active {
+    background: #4b9200;
+}
+
 .btn-square {
     width: 298px;
     height: 54px;
@@ -66,6 +74,14 @@ h3 {
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.btn-square:hover {
+    background: #e47209;
+}
+
+.btn-square:active {
+    background: #4b9200;
 }
 
 /* header */
