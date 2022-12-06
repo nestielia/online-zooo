@@ -98,11 +98,23 @@ h3 {
     }
 }
 
+@media (max-width: 768px) {
+    .banner {
+        height: 372px;
+    }
+}
+
 .navbar {
     position: relative;
     height: 80px;
     background-color: #000;
     z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 34px;
+    }
 }
 
 .logo {
@@ -124,16 +136,45 @@ h1 {
     padding-top: 4px;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        position: relative;
+        font-size: 12.29px;
+        border: none;
+        top: -15px;
+        left: -18px;
+    }
+}
+
 .bamboo-icon {
     position: absolute;
     left: 10px;
     top: 24px;
 }
 
+@media (max-width: 768px) {
+    .bamboo-icon {
+        left: 4px;
+        top: 2px;
+        width: 4.54px;
+        height: 13.56px;
+    }
+}
+
 .nav-menu {
    display: inline-block;
    list-style: none;
    margin-left: 60px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+.nav-menu a:hover {
+    color: #E47209;
 }
 
 .menu {
@@ -171,6 +212,19 @@ h1 {
     color: #F9804B;
 }
 
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 20px;
+    }
+}
+
 .inner-hero {
     position: relative;
 }
@@ -191,6 +245,15 @@ h1 {
         height: 367px;
         left: 426px;
         top: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 237.6px;
+        height: 237.6px;
+        left: 311px;
+        top: 10px;
     }
 }
 
@@ -218,11 +281,20 @@ h1 {
     }
 }
 
+@media (max-width: 768px) {
+    .promo {
+        width: 255.64px;
+        font-size: 54.29px;
+        left: 37px;
+        top: 40px;
+    }
+}
+
 .yellow {
     color: #FFEE2E;
 }
 
-.circle .btn-default {
+.hero .btn-default {
     position: relative;
     top: 17px;
     left: 2px;
@@ -236,24 +308,27 @@ h1 {
     }
 }
 
+@media (max-width: 768px) {
+    .hero .btn-default {
+        left: -348px;
+        top: -15px;
+    }
+}
+
 /* backstage */
 
 .backstage {
-    position: relative;
-}
-.flower-photo {
-    position: absolute;
-    right: 0;
-    top: 12px;
+    background: url(../../assets/images/flower_foto_right.png) 100% 12px no-repeat;
 }
 
 @media (max-width: 1220px) {
-    .flower-photo {
-        display: none;
+    .backstage {
+        background-position: 1296px 12px;
     }
 }
 
 .inner-backstage {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 87px;
@@ -270,6 +345,14 @@ h1 {
     }
 }
 
+@media (max-width: 768px) {
+    .inner-backstage {
+        display: block;
+        padding-top: 61px;
+        padding-bottom: 80px;
+    }
+}
+
 .backstage-content {
     color: #333B41;
     height: 403px;
@@ -278,6 +361,13 @@ h1 {
 @media (max-width:1220px) {
     .backstage-content {
         height: 427px;
+    }
+}
+
+@media (max-width: 768px) {
+    .backstage-content {
+        display: block;
+        max-width: 82%;
     }
 }
 
@@ -292,6 +382,18 @@ h1 {
         width: 455px;
         height: 408px;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .backstage-img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .backstage-content h2 {
+        padding-left: 4px;
     }
 }
 
@@ -314,6 +416,16 @@ h1 {
     padding-top: 34px;
     font-weight: 400;
     line-height: 138%;
+}
+
+@media (max-width: 768px) {
+    .line3 {
+        padding-top: 30px;
+        padding-left: 4px;
+    }
+    .paragraph2 {
+        padding-top: 19px;
+    }
 }
 
 /* animal-cards */
@@ -346,6 +458,12 @@ h1 {
     .animals-tile {
         height: 801px;
         gap: 92px 29px;
+    }
+}
+
+@media (max-width: 768px) {
+    .animals-tile {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -601,8 +719,21 @@ h1 {
     }
 }
 
+@media (max-width: 768px) {
+    .payment-scheme {
+        max-width: 400px;
+        margin-left: 0;
+    }
+}
+
 .payment-block {
     width: 168px;
+}
+
+@media (max-width: 768px) {
+    .payment-block {
+        width: 100px;
+    }
 }
 
 .payment-block-pic {
@@ -880,13 +1011,7 @@ h1 {
 }
 
 .donate-btn {
-    margin-bottom: 44px;
-}
-
-@media (max-width: 1220px) {
-    .donate-btn {
-        margin-bottom: 46px;
-    }
+    margin-bottom: 45px;
 }
 
 .subscribe {
@@ -975,7 +1100,7 @@ h1 {
  .footer-menu {
     display: flex;
     vertical-align: middle;
-    margin-left: 64px;
+    margin-left: 62px;
     list-style: none;
 }
 
@@ -1013,11 +1138,5 @@ h1 {
 }
 
 .author {
-    margin-bottom: 8px;
-}
-
-@media (max-width: 1220px) {
-    .author {
-        margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
 }
