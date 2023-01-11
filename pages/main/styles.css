@@ -479,6 +479,14 @@ h1 {
     cursor: pointer;
 }
 
+.arrow-bubble:hover {
+    background: #e47209;
+}
+
+.arrow-bubble:active {
+    background: #4b9200;
+}
+
 .animals-tile-wrapper {
     width: 100%;
     height: 100%;
